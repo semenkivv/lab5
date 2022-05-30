@@ -1,0 +1,60 @@
+package com.company;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class TriangleLinkedList{
+    private LinkedList<Triangle> trList = new LinkedList<>();
+
+    public void add(Triangle e){
+        trList.add(e);
+    }
+    public void add(int index,Triangle e){
+        trList.add(index,e);
+    }
+    public void clear(){
+        trList.clear();
+    }
+    public int size(){
+        return trList.size();
+    }
+    public void addFirst(Triangle e){
+        trList.addFirst(e);
+    }
+    public void addLast(Triangle e){
+        trList.addLast(e);
+    }
+    public boolean contains(Triangle e){
+        return trList.contains(e);
+    }
+    public Triangle getFirst(){
+        return trList.getFirst();
+    }
+    public Triangle getLast(){
+        return trList.getLast();
+    }
+    public int indexOf(Triangle e){
+        return trList.indexOf(e);
+    }
+    public Triangle pop(){
+        return trList.pop();
+    }
+    public void push(Triangle e){
+        trList.push(e);
+    }
+    public Triangle remove(){
+        return trList.remove();
+    }
+    public boolean remove(Triangle e){
+        return trList.remove(e);
+    }
+    public Triangle remove(int i){
+        return trList.remove(i);
+    }
+    public java.util.stream.Stream<Triangle> stream(){
+        return trList.stream();
+    }
+
+
+}
+
